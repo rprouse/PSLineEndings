@@ -10,11 +10,25 @@ recursively.
 
 ## Install
 
-Download the contents of this repository to your PowerShell modules directory, 
-`C:\Users\[User]\Documents\WindowsPowerShell\Modules\PSLineEndings` 
+Download the contents of this repository to your PowerShell modules directory; 
 
-Then add `Import-Module PSLineEndings` to your PowerShell profile 
-`C:\Users\[User]\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+```
+C:\Users\[User]\Documents\WindowsPowerShell\Modules\PSLineEndings
+``` 
+
+Then add `Import-Module PSLineEndings` to your PowerShell profile;
+
+```
+C:\Users\[User]\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+```
+
+By default, PowerShell restricts execution of all scripts. This is all about security. To "fix" this run PowerShell as Administrator and call
+
+```posh
+Set-ExecutionPolicy RemoteSigned
+```
+
+For mode details run `get-help about_signing` or `get-help about_Execution_Policies`.
 
 ## Usage
 
@@ -32,7 +46,7 @@ ConvertTo-Unix -Filter *.txt -Recurse
 
 ## License
 
-This code is under the [MIT License](LICENSE). This extension ships with unix2dos.exe and dos2unix.exe
+This code is under the [MIT License](LICENSE). This extension ships with `unix2dos.exe` and `dos2unix.exe`
 which are both under the [FreeBSD style license](bin/COPYING.txt).
 
 ## Warning
