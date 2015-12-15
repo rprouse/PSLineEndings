@@ -48,6 +48,15 @@ ConvertTo-Unix [-Filter] <String> [-Recurse]
 ConvertTo-Unix *.js -Recurse
 ```
 
+### Aliases
+
+The following aliases are defined;
+
+- **c2d** - ConvertTo-Dos
+- **u2d** - ConvertTo-Dos
+- **c2u** - ConvertTo-Unix
+- **d2u** - ConvertTo-Unix
+
 ## License
 
 This code is under the [MIT License](LICENSE). This extension ships with `unix2dos.exe` and `dos2unix.exe`

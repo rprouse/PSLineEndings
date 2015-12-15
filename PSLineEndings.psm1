@@ -62,4 +62,9 @@ function ConvertTo-Unix {
     }
 }
 
-Export-ModuleMember -Function 'ConvertTo-*'
+Set-Alias u2d ConvertTo-Dos
+Set-Alias c2d ConvertTo-Dos
+Set-Alias d2u ConvertTo-Unix
+Set-Alias c2u ConvertTo-Unix
+
+Export-ModuleMember -Function 'ConvertTo-*' -Alias *
