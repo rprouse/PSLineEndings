@@ -4,15 +4,13 @@ $dos2unix = Join-Path -Path $bin -ChildPath dos2unix.exe
 
 function ConvertTo-Dos ($Filter, [switch]$Recurse) {
     Get-ChildItem -File @psBoundParameters | ForEach-Object { 
-        $file = $_.FullName
-        $return = Start-Process -FilePath $unix2dos -ArgumentList $file -NoNewWindow -Wait -PassThru
+        $return = Start-Process -FilePath "`"$unix2dos`"" -ArgumentList "`"$($_.FullName)`"" -NoNewWindow -Wait -PassThru
     }
 }
 
 function ConvertTo-Unix ($Filter, [switch]$Recurse) {
     Get-ChildItem -File @psBoundParameters | ForEach-Object { 
-        $file = $_.FullName
-        $return = Start-Process -FilePath $dos2unix -ArgumentList $file -NoNewWindow -Wait -PassThru
+        $return = Start-Process -FilePath "`"$dos2unix`"" -ArgumentList "`"$($_.FullName)`"" -NoNewWindow -Wait -PassThru
     }
 }
 

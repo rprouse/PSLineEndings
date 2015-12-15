@@ -4,7 +4,7 @@
 RootModule = 'PSLineEndings.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0.0'
+ModuleVersion = '1.0.0.1'
 
 # ID used to uniquely identify this module
 GUID = '2252ec22-bb8e-454a-bd8a-883c0cb46614'
@@ -13,7 +13,7 @@ GUID = '2252ec22-bb8e-454a-bd8a-883c0cb46614'
 Author = 'Rob Prouse'
 
 # Copyright statement for this module
-Copyright = '(c) 2014. All rights reserved.'
+Copyright = '(c) 2015. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'Adds commands to convert line endings in the PowerShell console host'
@@ -46,7 +46,7 @@ AliasesToExport = '*'
 # FileList = @()
 
 # HelpInfo URI of this module
-# HelpInfoURI = ''
+HelpInfoURI = 'https://github.com/rprouse/PSLineEndings'
 
 }
 
