@@ -35,13 +35,17 @@ For mode details run `get-help about_signing` or `get-help about_Execution_Polic
 ### ConvertTo-Dos
 
 ```posh
-ConvertTo-Dos -Filter *.txt -Recurse
+ConvertTo-Dos [-Filter] <String> [-Recurse]
+
+ConvertTo-Dos *.js -Recurse
 ```
 
 ### ConvertTo-Unix
 
 ```posh
-ConvertTo-Unix -Filter *.txt -Recurse
+ConvertTo-Unix [-Filter] <String> [-Recurse]
+
+ConvertTo-Unix *.js -Recurse
 ```
 
 ## License

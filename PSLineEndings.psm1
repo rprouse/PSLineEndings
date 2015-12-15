@@ -16,7 +16,7 @@ The file filter
 Whether or not to recurse through sub-directories
 
 .EXAMPLE
-ConvertTo-Dos *.js
+ConvertTo-Dos *.js -Recurse
 #>
 function ConvertTo-Dos { 
     [CmdletBinding()]
@@ -46,7 +46,7 @@ The file filter
 Whether or not to recurse through sub-directories
 
 .EXAMPLE
-ConvertTo-Unix *.js
+ConvertTo-Unix *.js -Recurse
 #>
 function ConvertTo-Unix { 
     [CmdletBinding()]
